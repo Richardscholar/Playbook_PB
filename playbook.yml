@@ -1,0 +1,9 @@
+---
+- hosts: server
+  remote_user: richard
+  become: yes
+  roles:
+   - server
+   - php
+   - mysql
+   - wordpress
